@@ -1,0 +1,2 @@
+public class CreatePagosBoToExternalRequestMapper<T> {
+}
