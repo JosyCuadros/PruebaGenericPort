@@ -6,4 +6,5 @@ public abstract class PagoResponse {
     public String getNroComprobante() {
         return nroComprobante;
     }
+
 }

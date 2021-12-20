@@ -7,6 +7,9 @@ import com.example.pruebagenericaport.external_services.ExternalRequest;
 public class PagosBoToCreatePagoTarjetaRequestMapper implements CreatePagosBoToExternalRequestMapper<CreatePagosTarjetaRequest> {
     @Override
     public ExternalRequest<CreatePagosTarjetaRequest> map(PagosBo pagosBo) {
-        return null;
+        CreatePagosTarjetaRequest createPagosTarjetaRequest = (CreatePagosTarjetaRequest) pagosBo.getBody();
+        ExternalRequest<CreatePagosTarjetaRequest> externalRequest = new ExternalRequest<CreatePagosTarjetaRequest>(pagosBo.getServiceName(), createPagosTarjetaRequest );
+
+        return externalRequest;
     }
 }
