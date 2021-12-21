@@ -13,7 +13,9 @@ public class ExternalClient {
         if (externalRequest.serviceName == "TARJETA") {
             response = " { \"nroComprobante\":\"1234\", \"idPago\": \"1\", \"nroTarjeta\": \"4242424242424242\", \"importe\": \"123\"}";
         } else if(externalRequest.serviceName == "TRANSFERENCIA") {
-            response = "{ \"nroComprobante\": \"5678\", \"idPago\": \"1\", \"banco\": \"Banco Santapacienca\", \"importe\": \"123\"}";
+            response = "{ \"nroComprobante\": \"5678\", \"idPago\": \"2\", \"banco\": \"Banco Santapacienca\", \"importe\": \"123\"}";
+        }else if(externalRequest.serviceName == "QR"){
+            response = "{ \"nroComprobante\": \"9012\", \"idPago\": \"3\", \"codQr\": \"12345\", \"importe\": \"100\"}";
         }
 
         return objectMapper.readValue(response, responseType);

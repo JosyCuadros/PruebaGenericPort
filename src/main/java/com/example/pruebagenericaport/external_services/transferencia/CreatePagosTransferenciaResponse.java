@@ -1,6 +1,8 @@
-package com.example.pruebagenericaport.external_services;
+package com.example.pruebagenericaport.external_services.transferencia;
 
-public class CreatePagosTransferenciaResponse extends PagoResponse{
+import com.example.pruebagenericaport.external_services.PagoResponse;
+
+public class CreatePagosTransferenciaResponse extends PagoResponse {
     private String idPago;
     private String banco;
     private String importe;

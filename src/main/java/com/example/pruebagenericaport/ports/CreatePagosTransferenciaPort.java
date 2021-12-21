@@ -1,7 +1,7 @@
 package com.example.pruebagenericaport.ports;
 
-import com.example.pruebagenericaport.external_services.CreatePagosTransferenciaRequest;
-import com.example.pruebagenericaport.external_services.CreatePagosTransferenciaResponse;
+import com.example.pruebagenericaport.external_services.transferencia.CreatePagosTransferenciaRequest;
+import com.example.pruebagenericaport.external_services.transferencia.CreatePagosTransferenciaResponse;
 import com.example.pruebagenericaport.external_services.ExternalClient;
 import com.example.pruebagenericaport.ports.mappers.CreatePagosBoToExternalRequestMapper;
 

@@ -1,4 +1,6 @@
-package com.example.pruebagenericaport.external_services;
+package com.example.pruebagenericaport.external_services.tarjeta;
+
+import com.example.pruebagenericaport.external_services.PagoResponse;
 
 public class CreatePagosTarjetaResponse extends PagoResponse {
     private String idPago;
